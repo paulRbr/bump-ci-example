@@ -14,7 +14,7 @@ jobs:
       id: dry-run
       uses: bump-sh/github-action@0.3
       with:
-        doc: ${{ secrets.doc_id }}
-        token: ${{ secrets.doc_token }}
+        doc: ${{ secrets.BUMP_ID }}
+        token: ${{ secrets.BUMP_TOKEN }}
         file: bump.openapi.v3.yml
         command: dry-run
