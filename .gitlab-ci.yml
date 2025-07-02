@@ -49,3 +49,14 @@ diff_doc:
     - merge_requests
   except:
     - main
+
+add_note_to_mr:
+  image: 
+    name: gitlab/glab
+    entrypoint: [""]
+  script:
+    - glab mr note $MR_IID --unique --message "Salut!"
+  only:
+    - merge_requests
+  except:
+    - main
